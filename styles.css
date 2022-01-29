@@ -14,12 +14,11 @@
 }
 
 .sr-text:focus {
+  display: inline-block;
   background-color: yellow;
-  left: 210px;
-  top: 16px;
   height: auto;
   width: auto;
-  margin: auto;
+  position: static;
 }
 
 .button {
@@ -103,6 +102,7 @@ h2 {
   font-size: 2rem;
   font-weight: 700;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .grid-container {
@@ -142,4 +142,13 @@ blockquote {
   color: #666;
 }
 
-/* media query for mobile */
+/* code */
+code {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: 1.1rem;
+  background-color: #fafafa;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  padding: 0.2rem 0.4rem;
+  color: #666;
+}

@@ -1,5 +1,6 @@
 <!-- Create a basic HTML boilerplate -->
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>My First HTML Page</title>
@@ -12,18 +13,18 @@
 </head>
 
 <body>
-    <a class='sr-text' href="#main">Skip to main content</a>
     <nav>
+        <a class='sr-text' href="#main">Skip to main content</a>
         <a href="index.html">Home</a>
         <a href="about">About</a>
         <a href="contact">Contact</a>
     </nav>
     <main id="main">
-        <div class="container">
+        <header class="container">
             <h1>Github Copilot</h1>
             <p>This page was created with Github Copilot. It's freaking cool!</p>
-        </div>
-        <div class="grid-container">
+        </header>
+        <section class="grid-container">
             <div class="card">
                 <img src="wallpaper-1.avif" alt="Wallpaper Image">
                 <h2>Wallpapers</h2>
@@ -39,8 +40,8 @@
                 <h2>Architecture</h2>
                 <p>Crisp, architectural images.<br><a class="button" href="#">Have a look →</a></p>
             </div>
-        </div>
-        <div class="container">
+        </section>
+        <section class="container">
             <h2>Testimonials</h2>
             <div class="grid-container">
                 <div class="testimonial">
@@ -50,7 +51,7 @@
                         erat nunc consectetur purus, eget tincidunt nisl
                         ipsum eget.
                     </blockquote>
-                    <p class="author">- John Doe</p>
+                    <p class="author">— John Doe</p>
                 </div>
                 <div class="testimonial">
                     <blockquote>
@@ -59,7 +60,7 @@
                         erat nunc consectetur purus, eget tincidunt nisl
                         ipsum eget.
                     </blockquote>
-                    <p class="author">- Jane Doe</p>
+                    <p class="author">— Jane Doe</p>
                 </div>
                 <div class="testimonial">
                     <blockquote>
@@ -68,12 +69,20 @@
                         erat nunc consectetur purus, eget tincidunt nisl
                         ipsum eget.
                     </blockquote>
-                    <p class="author">- John Doe</p>
+                    <p class="author">— John Doe</p>
                 </div>
-        </div>
+        </section>
+        <section class="container">
+            <h2>Get started</h2>
+            <code>
+                npm install -g github-copilot
+            </code>
+
+        </section>
     </main>
     <footer>
         <p>Copyright &copy; 2022 Thomas Rettig</p>
     </footer>
 </body>
+
 </html>
