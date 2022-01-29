@@ -22,6 +22,7 @@
     <main id="main">
         <header class="container">
             <h1>Github Copilot</h1>
+            <button id="goFS">Go fullscreen</button>
             <p>This page was created with Github Copilot. It's freaking cool!</p>
         </header>
         <section class="grid-container">
@@ -38,10 +39,10 @@
             <div class="card">
                 <img src="wallpaper-1.avif" alt="Wallpaper Image">
                 <h2>Architecture</h2>
-                <p>Crisp, architectural images.<br><a class="button" href="#">Have a look →</a></p>
+                <p>Crisp, architectural images.<br><a class="button" href="#">Grab it →</a></p>
             </div>
         </section>
-        <section class="container">
+        <!-- <section class="container">
             <h2>Testimonials</h2>
             <div class="grid-container">
                 <div class="testimonial">
@@ -71,16 +72,19 @@
                     </blockquote>
                     <p class="author">— John Doe</p>
                 </div>
-        </section>
+        </section> -->
         <section class="container">
-            <h2>Get started</h2>
-            <code>
-                npm install -g github-copilot
-            </code>
-
+            <h2>Clone this repo</h2>
+            <code>gh repo clone ThomasRettig/github-copilot</code>
         </section>
     </main>
     <footer>
+        <script>
+            var goFS = document.getElementById("goFS");
+            goFS.addEventListener("click", function () {
+                document.body.requestFullscreen();
+            }, false);
+        </script>
         <p>Copyright &copy; 2022 Thomas Rettig</p>
     </footer>
 </body>
