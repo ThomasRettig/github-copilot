@@ -1,10 +1,10 @@
 <!-- Create a basic HTML boilerplate -->
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <title>My First HTML Page</title>
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico">
     <meta name="description" content="This is my first HTML page created using Github Copilot.">
     <meta name="keywords" content="HTML,CSS,JavaScript">
@@ -12,35 +12,37 @@
 </head>
 
 <body>
-    <div class="navbar">
+    <a class='sr-text' href="#main">Skip to main content</a>
+    <nav>
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </div>
-    <div class="container">
-        <h1>Github Copilot</h1>
-        <p>This page was created with Github Copilot. It's freaking cool!</p>
-    </div>
-    <div class="grid-container">
-        <div class="card">
-            <img src="wallpaper-1.avif" alt="Wallpaper Image">
-            <h2>Wallpapers</h2>
-            <p>Beautiful wallpapers rendered with Blender.<br><a class="button" href="#">Get it now →</a></p>
+        <a href="about">About</a>
+        <a href="contact">Contact</a>
+    </nav>
+    <main id="main">
+        <div class="container">
+            <h1>Github Copilot</h1>
+            <p>This page was created with Github Copilot. It's freaking cool!</p>
         </div>
-        <div class="card">
-            <img src="wallpaper-2.avif" alt="Wallpaper Image">
-            <h2>Card 2</h2>
-            <p>Beautiful wallpapers rendered with Blender.<br><a class="button" href="#">Check it out →</a></p>
+        <div class="grid-container">
+            <div class="card">
+                <img src="wallpaper-1.avif" alt="Wallpaper Image">
+                <h2>Wallpapers</h2>
+                <p>Stunning, otherworldly wallpapers for free.<br><a class="button" href="#">Get it now →</a></p>
+            </div>
+            <div class="card">
+                <img src="wallpaper-2.avif" alt="Wallpaper Image">
+                <h2>3D Renders</h2>
+                <p>3D scenes generated with Blender.<br><a class="button" href="#">Check it out →</a></p>
+            </div>
+            <div class="card">
+                <img src="wallpaper-1.avif" alt="Wallpaper Image">
+                <h2>Architecture</h2>
+                <p>Crisp, architectural images.<br><a class="button" href="#">Have a look →</a></p>
+            </div>
         </div>
-        <div class="card">
-            <img src="wallpaper-1.avif" alt="Wallpaper Image">
-            <h2>Card 3</h2>
-            <p>This is the third card.<br><a class="button" href="#">Have a look →</a></p>
-        </div>
-    </div>
-    <div class="footer">
+    </main>
+    <footer>
         <p>Copyright &copy; 2022 Thomas Rettig</p>
-    </div>
+    </footer>
 </body>
-
 </html>
